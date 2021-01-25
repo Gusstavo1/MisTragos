@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DrinkDetailsFragment"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_marginTop="8dp"
+        android:id="@+id/imgDrinkDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </com.github.chrisbanes.photoview.PhotoView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="8dp"
+        android:id="@+id/btnSaveDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/tvDrinkTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Michelada"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <!--
+    <TextView
+        android:id="@+id/tvHasAlcohol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Trago sin alcohol"
+        android:textStyle="bold"/>-->
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.gcr.mistragos.ui.MainFragment"
+        android:label="Lista de bebidas"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_drinkDetailsFragment"
+            app:destination="@id/drinkDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_favoritesDrinkFragment"
+            app:destination="@id/favoritesDrinkFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkDetailsFragment"
+        android:name="com.gcr.mistragos.ui.DrinkDetailsFragment"
+        android:label="Detalles de la bebida"
+        tools:layout="@layout/fragment_drink_details" />
+    <fragment
+        android:id="@+id/favoritesDrinkFragment"
+        android:name="com.gcr.mistragos.ui.FavoritesDrinkFragment"
+        android:label="Tus tragos favoritos"
+        tools:layout="@layout/fragment_favorites_drink" />
+</navigation>

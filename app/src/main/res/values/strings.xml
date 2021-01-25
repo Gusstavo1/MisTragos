@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MisTragos</string>
+    <string name="hello_blank_fragment">Bienvenido tragos app</string>
+    <string name="hello_blank_fragment2">Detalle de tu trago</string>
+</resources>
